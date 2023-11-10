@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Uebungen</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+</head>
+<body>
+    <!-- =======================================
+                    DOM Level 1_2
+        ======================================== -->
+    <h2>Level 1_2</h2>
+    <div class="style">
+        <div class="example">
+            Ein div mit class="example".
+        </div>
+    
+        <div class="example">
+            Ein weiteres div mit class="example".
+        </div>
+    
+        <p class="example">Dies ist ein p-Element mit class="example"</p>
+    
+        <p>Dies ist ein <span class="example">span</span> Element mit class="example" in einem anderen p-Element.</p>
+    
+        <p>Klicken Sie auf die Button, um die Hintergrundfarbe aller Elemente mit class="example" zu ändern.</p>
+    
+        <button class="example" onclick="myFunction()">Versuchen Sie es</button>
+    </div>
+    <!-- =======================================
+                    DOM Level 1_3
+        ======================================== -->
+        <h2>Level 1_3</h2>
+    <ul class="gameList" id="myList">
+        <li>Super Mario World</li>
+        <li>The Legend of Zelda</li>
+        <li>Portal 2</li>
+        <li>Tetris</li>
+        <li>Half-Life 2</li>
+        <li>Red Dead Redemption</li>
+        <li>Grand Theft Auto V</li>
+    </ul>
+    <div class="unten">
+        <button># firstElementChild</button><br>
+        <button># lastElementChild</button><br>
+        <button># firstElementChild nextElementSibling</button><br>
+        <button># lastElementChild previousElementSibling</button>
+    </div>
+    
+    <h1>Output</h1>
+    <output></output>
+    <!-- ========================================
+                        DOM Level 1_4
+        ======================================== -->
+    <div>
+        <h2>Level 1_4</h2>
+        <h1>Meine Einkaufsliste</h1>
+        
+        <input type="text" id="inputText" placeholder="Ich benötige..." />
+        <button id="add-to-list">Hinzufügen</button>
+        
+        <ul id="myShoppingList">
+            <!-- Hier werden die dynamisch hinzugefügten Elemente erscheinen -->
+        </ul>
+
+    </div>
+    <!-- ========================================
+                    DOM Level 1_9
+        ======================================== -->
+        <h2>Level 1_9</h2>
+    <div id="level-1_9">
+        <form onsubmit="return false" class="form-lvl-1_9">
+            <select id="farbAuswahlen">
+                <option>Medium Orchid</option>
+                <option>Mint Cream</option>
+                <option>Dodger Blue</option>
+                <option>Goldenrod</option>
+                <option>Wheat</option>
+                <option>Medium Turquoise</option>
+                <option>Moccasin</option>
+                <option>Fire Brick</option>
+                <option>Lime Green</option>
+                <option>Slate Gray</option>
+            </select>
+            <button class="btn-lvl-1_9" id="removeButton">Farbe von Liste Entfernen</button>
+        </form>
+    </div>
+
+    <!-- ========================================
+                    DOM Level 2_1
+        ======================================== -->
+    <div class="level-2_1_wrapper">    
+        <h2>Level 2_1</h2>
+        <ul class="level-2_1-ul">
+            <div class="listContainer">
+                <li class="nav-li"><a class="nav" id="navHome" href="#home">Home</a></li>
+                <li class="nav-li ><a class="nav" id="navNews" href="#news">News</a></li>
+                <li class="nav-li><a class="nav" id="navContact" href="#contact">Contact</a></li>
+            </div>
+            <li class="nav"><a class="active" id="navChange">Change me</a></li>
+        </ul>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
